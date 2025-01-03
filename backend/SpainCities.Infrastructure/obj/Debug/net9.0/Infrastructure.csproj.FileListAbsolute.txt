@@ -1,0 +1,17 @@
+C:\proyectos\.NET Core\SpainCities\SpainCities.Infrastructure\obj\Debug\net9.0\Infrastructure.csproj.AssemblyReference.cache
+C:\proyectos\.NET Core\SpainCities\SpainCities.Infrastructure\obj\Debug\net9.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\proyectos\.NET Core\SpainCities\SpainCities.Infrastructure\obj\Debug\net9.0\Infrastructure.AssemblyInfoInputs.cache
+C:\proyectos\.NET Core\SpainCities\SpainCities.Infrastructure\obj\Debug\net9.0\Infrastructure.AssemblyInfo.cs
+C:\proyectos\.NET Core\SpainCities\SpainCities.Infrastructure\obj\Debug\net9.0\Infrastructure.csproj.CoreCompileInputs.cache
+C:\proyectos\.NET Core\SpainCities\SpainCities.Infrastructure\bin\Debug\net9.0\Infrastructure.deps.json
+C:\proyectos\.NET Core\SpainCities\SpainCities.Infrastructure\bin\Debug\net9.0\Infrastructure.runtimeconfig.json
+C:\proyectos\.NET Core\SpainCities\SpainCities.Infrastructure\bin\Debug\net9.0\Infrastructure.dll
+C:\proyectos\.NET Core\SpainCities\SpainCities.Infrastructure\bin\Debug\net9.0\Infrastructure.pdb
+C:\proyectos\.NET Core\SpainCities\SpainCities.Infrastructure\bin\Debug\net9.0\Core.dll
+C:\proyectos\.NET Core\SpainCities\SpainCities.Infrastructure\bin\Debug\net9.0\Core.pdb
+C:\proyectos\.NET Core\SpainCities\SpainCities.Infrastructure\obj\Debug\net9.0\Infrastr.15EFFBFE.Up2Date
+C:\proyectos\.NET Core\SpainCities\SpainCities.Infrastructure\obj\Debug\net9.0\Infrastructure.dll
+C:\proyectos\.NET Core\SpainCities\SpainCities.Infrastructure\obj\Debug\net9.0\refint\Infrastructure.dll
+C:\proyectos\.NET Core\SpainCities\SpainCities.Infrastructure\obj\Debug\net9.0\Infrastructure.pdb
+C:\proyectos\.NET Core\SpainCities\SpainCities.Infrastructure\obj\Debug\net9.0\Infrastructure.genruntimeconfig.cache
+C:\proyectos\.NET Core\SpainCities\SpainCities.Infrastructure\obj\Debug\net9.0\ref\Infrastructure.dll

@@ -1,0 +1,59 @@
+﻿Id          Name                                                                                                 RegionId
+----------- ---------------------------------------------------------------------------------------------------- -----------
+1           Almería                                                                                              1
+2           Cádiz                                                                                                1
+3           Córdoba                                                                                              1
+4           Granada                                                                                              1
+5           Huelva                                                                                               1
+6           Jaén                                                                                                 1
+7           Málaga                                                                                               1
+8           Sevilla                                                                                              1
+9           Barcelona                                                                                            7
+10          Girona                                                                                               7
+11          Lerida                                                                                               7
+12          Tarragona                                                                                            7
+13          Madrid                                                                                               8
+14          Ávila                                                                                                5
+15          Burgos                                                                                               5
+16          León                                                                                                 5
+17          Palencia                                                                                             5
+18          Salamanca                                                                                            5
+19          Segovia                                                                                              5
+20          Soria                                                                                                5
+21          Valladolid                                                                                           5
+22          Zamora                                                                                               5
+23          Albacete                                                                                             6
+24          Ciudad Real                                                                                          6
+25          Cuenca                                                                                               6
+26          Guadalajara                                                                                          6
+27          Toledo                                                                                               6
+28          Alicante                                                                                             10
+29          Castellón                                                                                            10
+30          Valencia                                                                                             10
+31          La Coruña                                                                                            12
+32          Lugo                                                                                                 12
+33          Ourense                                                                                              12
+34          Pontevedra                                                                                           12
+35          Álava                                                                                                15
+36          Gipuzkoa                                                                                             15
+37          Bizkaia                                                                                              15
+38          Huesca                                                                                               2
+39          Teruel                                                                                               2
+40          Zaragoza                                                                                             2
+41          Cantabria                                                                                            4
+42          Badajoz                                                                                              11
+43          Cáceres                                                                                              11
+44          Islas Baleares                                                                                       13
+45          Murcia                                                                                               17
+46          La Rioja                                                                                             14
+47          Navarra                                                                                              9
+48          Las Palmas                                                                                           3
+49          Santa Cruz de Tenerife                                                                               3
+50          Ceuta                                                                                                18
+51          Melilla                                                                                              19
+52          Provincia de Asturias                                                                                16
+
+(52 rows affected)
+
+
+Completion time: 2025-01-03T01:02:31.4204348+01:00

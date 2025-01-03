@@ -1,0 +1,26 @@
+﻿Id          Name                                                                                                 Population  Capital                                                                                              Surface
+----------- ---------------------------------------------------------------------------------------------------- ----------- ---------------------------------------------------------------------------------------------------- -----------
+1           Andalucía                                                                                            8584147     Sevilla                                                                                              87597
+2           Aragón                                                                                               1341289     Zaragoza                                                                                             47720
+3           Canarias                                                                                             2213016     Las Palmas de Gran Canaria y Santa Cruz de Tenerife                                                  7447
+4           Cantabria                                                                                            588387      Santander                                                                                            5321
+5           Castilla y León                                                                                      2383703     Valladolid                                                                                           94227
+6           Castilla-La Mancha                                                                                   2084086     Toledo                                                                                               79462
+7           Cataluña                                                                                             7901963     Barcelona                                                                                            32091
+8           Comunidad de Madrid                                                                                  6871903     Madrid                                                                                               8028
+9           Comunidad Foral de Navarra                                                                           672155      Pamplona                                                                                             10390
+10          Comunidad Valenciana                                                                                 5216195     Valencia                                                                                             23254
+11          Extremadura                                                                                          1054306     Mérida                                                                                               41635
+12          Galicia                                                                                              2699424     Santiago de Compostela                                                                               29575
+13          Islas Baleares                                                                                       1209906     Palma                                                                                                4992
+14          La Rioja                                                                                             322282      Logroño                                                                                              5045
+15          País Vasco                                                                                           2216302     Vitoria                                                                                              7230
+16          Principado de Asturias                                                                               1006060     Oviedo                                                                                               10602
+17          Región de Murcia                                                                                     1551692     Murcia                                                                                               11314
+18          Ceuta                                                                                                83052       Ceuta                                                                                                19
+19          Melilla                                                                                              85493       Melilla                                                                                              13
+
+(19 rows affected)
+
+
+Completion time: 2025-01-03T01:02:23.0143898+01:00

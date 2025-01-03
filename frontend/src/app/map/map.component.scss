@@ -1,0 +1,20 @@
+.map-container {
+    text-align: center; /* Centra la imagen */
+    margin-top: -10px;
+  }
+  
+  .map-container img {
+    max-width: 100%; /* La imagen se adapta al tamaño de la pantalla */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+  }
+
+  .mensaje {
+    text-align: center; /* Centra el texto */
+    margin-bottom: 5px; /* Ajusta el espacio entre el mensaje y la imagen (puedes reducir el valor) */
+  }
+  
+  img {
+    display: block; /* Elimina el espacio adicional debajo de la imagen */
+    margin: 0 auto; /* Centra la imagen dentro del contenedor */
+  }
+  

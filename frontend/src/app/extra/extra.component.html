@@ -1,0 +1,33 @@
+<p style="font-size: 20px; font-weight: bold; background-color: #d3d3d3;">Información Extra de la comunidad:</p>
+<p><strong>Región:</strong> {{ region }}</p>
+<p><strong>Población:</strong> {{ population | number:'1.0-0' }}</p>
+<p><strong>Superficie:</strong> {{ surface | number:'1.0-0' }}  km²</p> 
+
+<div *ngIf="capital == 'Madrid'; else otroContenido"><p><strong>Capital:</strong>  <strong style="color: rgb(0, 52, 100);"> {{capital }} (Capital de la república) </strong> </p> </div>
+<ng-template #otroContenido>
+  <p><strong>Capital:</strong>  <strong style="color: darkgreen;"> {{capital }} </strong> </p> 
+</ng-template>
+<!-- Mostrar las provincias concatenadas -->
+<p><strong>Provincias:</strong> {{ provincesString }}</p>
+
+<!-- Mostrar las ciudades concatenadas -->
+<p><strong>Ciudades más importantes:</strong> {{ cities }}</p>
+
+<!-- Carrusel de imágenes -->
+<div *ngIf="images.length">
+  <!-- Contenedor del Carrusel -->
+  <div class="carousel-container">
+    <!-- Imagen actual -->
+    <div class="carousel-slide">
+      <img [src]="images[currentIndex]" alt="Imagen del carrusel" class="carousel-image">
+    </div>
+
+    <!-- Botones de navegación -->
+    <button (click)="prevImage()" class="carousel-btn prev-btn">❮</button>
+    <button (click)="nextImage()" class="carousel-btn next-btn">❯</button>
+  </div>
+</div>
+
+<div>
+  <input type="button" (click)="closeWindow()" value="Cerrar" class="centered-button">
+</div>

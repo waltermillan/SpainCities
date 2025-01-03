@@ -1,0 +1,6 @@
+@SpainCities.Web_HostAddress = http://localhost:5108
+
+GET {{SpainCities.Web_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
