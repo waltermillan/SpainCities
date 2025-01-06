@@ -11,11 +11,11 @@ y a la vez armar un proyecto que sirve para explicar donde está cada region de 
 
 BACKEND:
 - Arquitectura Onion.
-- Diseño de pateones: Repository, UnitOfWork
+- Diseño de patrones: Repository, UnitOfWork
 
 FRONTEND:
 - Desarrollado con Angular 18.0.2
-- Orientado a modulos.
+- Orientado a módulos.
 
 BBDD
 - Escrito en SQL Server
