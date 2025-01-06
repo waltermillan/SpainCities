@@ -1,20 +1,18 @@
 ﻿using Core.Entities;
 using Core.Interfases;
 using Infrastructure.Data;
-using Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 
-public class CityRepository : GenericRepository<City>, ICityRepository
+namespace Infrastructure.Repositories;
+
+public class CityRepository(SpainCitiesContext context) : GenericRepository<City>(context), ICityRepository
 {
-    public CityRepository(SpainCitiesCotext context) : base(context)
-    {
-    }
 
     // Método existente
     public override async Task<City> GetByIdAsync(int id)
     {
         return await _context.Cities
-                          .FirstOrDefaultAsync(p => p.Id == id); // Cambié 'ProvinceId' por 'Id' para obtener la ciudad por ID
+                          .FirstOrDefaultAsync(p => p.Id == id);
     }
 
     // Método existente
@@ -37,9 +35,9 @@ public class CityRepository : GenericRepository<City>, ICityRepository
     {
         var consulta = _context.Cities as IQueryable<City>;
 
-        if (!String.IsNullOrEmpty(search))
+        if (!string.IsNullOrEmpty(search))
         {
-            consulta = consulta.Where(p => p.Name.ToLower().Contains(search.ToLower())); // Cambié 'Id' por 'Name' para buscar por nombre
+            consulta = consulta.Where(p => p.Name.Contains(search, StringComparison.CurrentCultureIgnoreCase));
         }
 
         var totalRegistros = await consulta.CountAsync();

@@ -299,21 +299,10 @@
         }
       }
     },
-    "/api/City/Update/{id}": {
+    "/api/City/Update": {
       "put": {
         "tags": [
           "City"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
         ],
         "requestBody": {
           "content": {
@@ -646,21 +635,10 @@
         }
       }
     },
-    "/api/Image/Update/{id}": {
+    "/api/Image/Update": {
       "put": {
         "tags": [
           "Image"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
         ],
         "requestBody": {
           "content": {
@@ -978,21 +956,10 @@
         }
       }
     },
-    "/api/Province/Update/{id}": {
+    "/api/Province/Update": {
       "put": {
         "tags": [
           "Province"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
         ],
         "requestBody": {
           "content": {
@@ -1325,21 +1292,10 @@
         }
       }
     },
-    "/api/Region/Update/{id}": {
+    "/api/Region/Update": {
       "put": {
         "tags": [
           "Region"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
         ],
         "requestBody": {
           "content": {

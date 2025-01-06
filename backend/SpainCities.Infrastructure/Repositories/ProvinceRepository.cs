@@ -1,16 +1,12 @@
 ﻿using Core.Entities;
-using Core.Interfaces;
 using Core.Interfases;
 using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Repositories;
 
-public class ProvinceRepository : GenericRepository<Province>, IProvinceRepository
+public class ProvinceRepository(SpainCitiesContext context) : GenericRepository<Province>(context), IProvinceRepository
 {
-    public ProvinceRepository(SpainCitiesCotext context) : base(context)
-    {
-    }
 
     // Método para obtener provincias por regionId
     public async Task<IEnumerable<Province>> GetProvincesByRegionAsync(int regionId)

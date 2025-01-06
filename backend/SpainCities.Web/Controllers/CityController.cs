@@ -1,8 +1,9 @@
-﻿using API.Controllers;
-using AutoMapper;
+﻿using AutoMapper;
 using Core.Entities;
-using Core.Interfaces;
+using Core.Interfases;
 using Microsoft.AspNetCore.Mvc;
+
+namespace API.Controllers;
 
 public class CityController : BaseApiController
 {
@@ -75,11 +76,11 @@ public class CityController : BaseApiController
     }
 
     // Método existente: actualizar una ciudad
-    [HttpPut("Update/{id}")]
+    [HttpPut("Update")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
-    public async Task<ActionResult<City>> Put(int id, [FromBody] City oCity)
+    public async Task<ActionResult<City>> Put([FromBody] City oCity)
     {
         if (oCity == null)
             return NotFound();

@@ -1,6 +1,6 @@
 ﻿using Core.Interfases;
 
-namespace Core.Interfaces;
+namespace Core.Interfases;
 
 public interface IUnitOfWork
 {
@@ -8,5 +8,7 @@ public interface IUnitOfWork
     IProvinceRepository Provinces { get; }
     IRegionRepository Regions { get; }
     IImageRepository Images { get; }
+
+    void Dispose();
     Task<int> SaveAsync();
 }

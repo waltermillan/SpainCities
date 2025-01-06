@@ -4,12 +4,8 @@ using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Repositories;
-public class ImageRepository : GenericRepository<Image>, IImageRepository
+public class ImageRepository(SpainCitiesContext context) : GenericRepository<Image>(context), IImageRepository
 {
-    public ImageRepository(SpainCitiesCotext context) : base(context)
-    {
-    }
-
     public override async Task<Image> GetByIdAsync(int id)
     {
         return await _context.Images
@@ -30,7 +26,7 @@ public class ImageRepository : GenericRepository<Image>, IImageRepository
 
         if (!String.IsNullOrEmpty(search))
         {
-            consulta = consulta.Where(p => p.Id.ToString().ToLower().Contains(search));
+            consulta = consulta.Where(p => p.Id.ToString().Contains(search, StringComparison.CurrentCultureIgnoreCase));
         }
 
 

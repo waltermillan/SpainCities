@@ -1,5 +1,5 @@
 ﻿using Core.Entities;
-using Core.Interfaces;
+using Core.Interfases;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 
@@ -59,11 +59,11 @@ public class ImageController : BaseApiController
 
 
     //PUT: api/Images/4
-    [HttpPut("Update/{id}")]
+    [HttpPut("Update")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
-    public async Task<ActionResult<Image>> Put(int id, [FromBody] Image oImage)
+    public async Task<ActionResult<Image>> Put([FromBody] Image oImage)
     {
         if (oImage == null)
             return NotFound();

@@ -1,18 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 using Core.Entities;
-using Core.Interfaces;
 using Infrastructure.Data;
+using Core.Interfases;
 namespace Infrastructure.Repositories;
 
-public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity
+public class GenericRepository<T>(SpainCitiesContext context) : IGenericRepository<T> where T : BaseEntity
 {
-    protected readonly SpainCitiesCotext _context;
-
-    public GenericRepository(SpainCitiesCotext context)
-    {
-        _context = context;
-    }
+    protected readonly SpainCitiesContext _context = context;
 
     public virtual void Add(T entity)
     {

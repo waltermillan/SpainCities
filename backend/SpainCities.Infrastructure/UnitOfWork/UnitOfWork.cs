@@ -1,18 +1,17 @@
-﻿using Core.Interfaces;
-using Core.Interfases;
+﻿using Core.Interfases;
 using Infrastructure.Data;
 using Infrastructure.Repositories;
 namespace Infrastructure.UnitOfWork;
 
 public class UnitOfWork : IUnitOfWork, IDisposable
 {
-    private readonly SpainCitiesCotext _context;
+    private readonly SpainCitiesContext _context;
     private ICityRepository _cities;
     private IProvinceRepository _provinces;
     private IRegionRepository _regions;
     private IImageRepository _images;
 
-    public UnitOfWork(SpainCitiesCotext context)
+    public UnitOfWork(SpainCitiesContext context)
     {
         _context = context;
     }

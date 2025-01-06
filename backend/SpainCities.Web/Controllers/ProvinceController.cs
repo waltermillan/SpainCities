@@ -1,5 +1,5 @@
 ﻿using Core.Entities;
-using Core.Interfaces;
+using Core.Interfases;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
@@ -85,11 +85,11 @@ public class ProvinceController : BaseApiController
     }
 
     // PUT: api/Provinces/Update/{id} (Método existente)
-    [HttpPut("Update/{id}")]
+    [HttpPut("Update")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
-    public async Task<ActionResult<Province>> Put(int id, [FromBody] Province oProvince)
+    public async Task<ActionResult<Province>> Put([FromBody] Province oProvince)
     {
         if (oProvince == null)
             return NotFound();

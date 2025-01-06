@@ -1,11 +1,11 @@
 ﻿using Core.Entities;
+using Core.Interfases;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Core.Interfaces
+namespace Core.Interfases;
+
+public interface IProvinceRepository : IGenericRepository<Province>
 {
-    public interface IProvinceRepository : IGenericRepository<Province>
-    {
-        Task<IEnumerable<Province>> GetProvincesByRegionAsync(int regionId); // Añadir esta línea
-    }
+    Task<IEnumerable<Province>> GetProvincesByRegionAsync(int regionId);
 }

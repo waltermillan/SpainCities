@@ -13,9 +13,9 @@ builder.Services.AddAplicacionServices();
 
 builder.Services.AddControllers();
 
-builder.Services.AddDbContext<SpainCitiesCotext>(options =>
+builder.Services.AddDbContext<SpainCitiesContext>(options =>
 {
-    string connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+    string connectionString = builder.Configuration.GetConnectionString("SpainCitiesConnection");
     options.UseSqlServer(connectionString);
 });
 
@@ -38,13 +38,13 @@ using (var scope = app.Services.CreateScope())
     var loggerFactory = services.GetRequiredService<ILoggerFactory>();
     try
     {
-        var context = services.GetRequiredService<SpainCitiesCotext>();
+        var context = services.GetRequiredService<SpainCitiesContext>();
         await context.Database.MigrateAsync();
     }
     catch (Exception ex)
     {
         var logger = loggerFactory.CreateLogger<Program>();
-        logger.LogError(ex, "Ocurri? un error durante la migraci?n");
+        logger.LogError(ex, "Ocurrió un error durante la migración");
     }
 }
 

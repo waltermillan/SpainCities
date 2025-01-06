@@ -1,21 +1,14 @@
 ﻿using Core.Entities;
-using Core.Interfaces;
 using Core.Interfases;
 using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Repositories;
-public class RegionRepository : GenericRepository<Region>, IRegionRepository
+public class RegionRepository(SpainCitiesContext context) : GenericRepository<Region>(context), IRegionRepository
 {
-    public RegionRepository(SpainCitiesCotext context) : base(context)
-    {
-    }
-
     public override async Task<Region> GetByIdAsync(int id)
     {
         return await _context.Regions
-                          //.Include(p => p.FechaAlquiler)
-                          //.Include(p => p.FechaDevolucion)
                           .FirstOrDefaultAsync(p => p.Id == id);
 
     }
@@ -23,8 +16,6 @@ public class RegionRepository : GenericRepository<Region>, IRegionRepository
     public override async Task<IEnumerable<Region>> GetAllAsync()
     {
         return await _context.Regions
-                            //.Include(u => u.FechaAlquiler)
-                            //.Include(u => u.FechaDevolucion)
                             .ToListAsync();
     }
 
@@ -35,7 +26,7 @@ public class RegionRepository : GenericRepository<Region>, IRegionRepository
 
         if (!String.IsNullOrEmpty(search))
         {
-            consulta = consulta.Where(p => p.Id.ToString().ToLower().Contains(search));
+            consulta = consulta.Where(p => p.Id.ToString().Contains(search, StringComparison.CurrentCultureIgnoreCase));
         }
 
 

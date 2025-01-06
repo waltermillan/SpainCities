@@ -1,20 +1,14 @@
 ﻿using Core.Entities;
-using Core.Interfaces;
+using Core.Interfases;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers;
 [Route("api/[controller]")]
-public class RegionController : BaseApiController
+public class RegionController(IUnitOfWork unitOfWork, IMapper mapper) : BaseApiController
 {
-    private readonly IUnitOfWork _unitOfWork;
-    private readonly IMapper _mapper;
-
-    public RegionController(IUnitOfWork unitOfWork, IMapper mapper)
-    {
-        _unitOfWork = unitOfWork;
-        _mapper = mapper;
-    }
+    private readonly IUnitOfWork _unitOfWork = unitOfWork;
+    private readonly IMapper _mapper = mapper;
 
     [HttpGet("GetAll")]
     [ProducesResponseType(StatusCodes.Status200OK)]
@@ -59,11 +53,11 @@ public class RegionController : BaseApiController
 
 
     //PUT: api/Regions/4
-    [HttpPut("Update/{id}")]
+    [HttpPut("Update")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
-    public async Task<ActionResult<Region>> Put(int id, [FromBody] Region oRegion)
+    public async Task<ActionResult<Region>> Put([FromBody] Region oRegion)
     {
         if (oRegion == null)
             return NotFound();
