@@ -4,7 +4,7 @@ import { DatosService } from '../services/datos.service';  // Asegúrate de que 
 import { Region } from '../models/region.model';
 import { Province } from '../models/province.model';
 import { City } from '../models/city.model';
-import { ImageService } from '../services/image.service';
+import { PictureService } from '../services/picture.service';
 import { isPlatformBrowser } from '@angular/common';
 
 @Component({
@@ -14,7 +14,7 @@ import { isPlatformBrowser } from '@angular/common';
 })
 export class ExtraComponent implements OnInit {
 
-  images: string[] = [];
+  pictures: string[] = [];
   currentIndex: number = 0;  // Índice de la imagen actual
   province: string = '';
   cities: string = '';  // Aquí almacenaremos las ciudades separadas por "/"
@@ -22,14 +22,14 @@ export class ExtraComponent implements OnInit {
   population: number = 0;
   surface: number = 0;
   capital: string = '';
-  image: string = '';  // Si deseas agregar una imagen específica
+  picture: string = '';  // Si deseas agregar una imagen específica
   provinces: Province[] = [];  // Array para almacenar las provincias
   provincesString: string = '';  // Aquí almacenaremos la cadena de provincias concatenadas
 
   constructor(
     private route: ActivatedRoute,
     private datosService: DatosService,
-    private imageService: ImageService,
+    private pictureService: PictureService,
     @Inject(PLATFORM_ID) private platformId: Object,
   ) {}
 
@@ -38,7 +38,7 @@ export class ExtraComponent implements OnInit {
     const regionId = this.route.snapshot.queryParamMap.get('NroRegion');
     if (regionId) {
       this.getRegionInfo(Number(regionId));  // Llama a la función para obtener la información de la región
-      this.loadImages(Number(regionId));
+      this.loadPictures(Number(regionId));
 
       // Llamar a la función para cargar las provincias
       this.loadProvinces(Number(regionId));
@@ -48,7 +48,7 @@ export class ExtraComponent implements OnInit {
 
       // Solo se ejecuta en el navegador
       if (isPlatformBrowser(this.platformId)) {
-        setInterval(() => this.nextImage(), 5000);  // Esto solo se ejecutará en el navegador
+        setInterval(() => this.nextPicture(), 5000);  // Esto solo se ejecutará en el navegador
       }
     }
   }
@@ -93,12 +93,12 @@ export class ExtraComponent implements OnInit {
     });
   }
 
-  loadImages(regionId: number): void {
-    const ids = this.getImageIdsForRegion(regionId);
+  loadPictures(regionId: number): void {
+    const ids = this.getPictureIdsForRegion(regionId);
     ids.forEach(id => {
-      this.imageService.getImage(id).subscribe({
+      this.pictureService.getPicture(id).subscribe({
         next: (data) => {
-          this.images.push(data.imageBase64);  // Almacena la imagen base64
+          this.pictures.push(data.imageBase64);  // Almacena la imagen base64
         },
         error: (error) => {
           //console.error('Error al cargar la imagen:', error);
@@ -110,7 +110,7 @@ export class ExtraComponent implements OnInit {
     });
   }
 
-  getImageIdsForRegion(regionId: number): number[] {
+  getPictureIdsForRegion(regionId: number): number[] {
     // Aquí puedes definir la lógica de cómo se asignan los IDs dependiendo del RegionId.
     // Como ejemplo, podrías tener diferentes rangos de IDs o una lista fija.
     switch (regionId) {
@@ -158,12 +158,12 @@ export class ExtraComponent implements OnInit {
   }
 
   // Cambia a la siguiente imagen
-  nextImage(): void {
-    this.currentIndex = (this.currentIndex + 1) % this.images.length;
+  nextPicture(): void {
+    this.currentIndex = (this.currentIndex + 1) % this.pictures.length;
   }
 
   // Cambia a la imagen anterior
-  prevImage(): void {
-    this.currentIndex = (this.currentIndex - 1 + this.images.length) % this.images.length;
+  prevPicture(): void {
+    this.currentIndex = (this.currentIndex - 1 + this.pictures.length) % this.pictures.length;
   }
 }

@@ -9,7 +9,7 @@ public class UnitOfWork : IUnitOfWork, IDisposable
     private ICityRepository _cities;
     private IProvinceRepository _provinces;
     private IRegionRepository _regions;
-    private IImageRepository _images;
+    private IPictureRepository _pictures;
 
     public UnitOfWork(SpainCitiesContext context)
     {
@@ -51,15 +51,15 @@ public class UnitOfWork : IUnitOfWork, IDisposable
             return _regions;
         }
     }
-    public IImageRepository Images
+    public IPictureRepository Pictures
     {
         get
         {
-            if (_images == null)
+            if (_pictures == null)
             {
-                _images = new ImageRepository(_context);
+                _pictures = new PictureRepository(_context);
             }
-            return _images;
+            return _pictures;
         }
     }
     public async Task<int> SaveAsync()

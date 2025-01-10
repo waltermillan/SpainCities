@@ -5,17 +5,17 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class ImageService {
+export class PictureService {
 
-  private apiUrl = 'http://localhost:5184/api/Image/Get?id=';
+  private apiUrl = 'http://localhost:5184/api/Picture/Get?id=';
 
   constructor(private http: HttpClient) { }
 
   // Cambiado para recibir un objeto con base64Image
-  getImage(id: number): Observable<{ imageBase64: string }> {
+  getPicture(id: number): Observable<{ imageBase64: string }> {
     //return this.http.get<{ imageBase64: string }>(`${this.apiUrl}${id}`);
   const url = `${this.apiUrl}${id}`;
-  //console.log('URL de la petición:', url);
+  console.log('URL de la petición:', url);
   return this.http.get<{ imageBase64: string }>(url);
   }
 }

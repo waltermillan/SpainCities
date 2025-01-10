@@ -227,22 +227,22 @@
     ]
   },
   {
-    "ContainingType": "API.Controllers.ImageController",
+    "ContainingType": "API.Controllers.PictureController",
     "Method": "Post",
-    "RelativePath": "api/Image/Add",
+    "RelativePath": "api/Picture/Add",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "oImage",
-        "Type": "Core.Entities.Image",
+        "Name": "oPicture",
+        "Type": "Core.Entities.Picture",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "Core.Entities.Image",
+        "Type": "Core.Entities.Picture",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -262,9 +262,9 @@
     ]
   },
   {
-    "ContainingType": "API.Controllers.ImageController",
+    "ContainingType": "API.Controllers.PictureController",
     "Method": "Delete",
-    "RelativePath": "api/Image/Delete/{id}",
+    "RelativePath": "api/Picture/Delete/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -293,9 +293,9 @@
     ]
   },
   {
-    "ContainingType": "API.Controllers.ImageController",
+    "ContainingType": "API.Controllers.PictureController",
     "Method": "Get",
-    "RelativePath": "api/Image/Get",
+    "RelativePath": "api/Picture/Get",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -308,7 +308,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Core.Entities.Image",
+        "Type": "Core.Entities.Picture",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -337,16 +337,16 @@
     ]
   },
   {
-    "ContainingType": "API.Controllers.ImageController",
+    "ContainingType": "API.Controllers.PictureController",
     "Method": "Get",
-    "RelativePath": "api/Image/GetAll",
+    "RelativePath": "api/Picture/GetAll",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[Core.Entities.Image, Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Core.Entities.Picture, Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -366,22 +366,22 @@
     ]
   },
   {
-    "ContainingType": "API.Controllers.ImageController",
+    "ContainingType": "API.Controllers.PictureController",
     "Method": "Put",
-    "RelativePath": "api/Image/Update",
+    "RelativePath": "api/Picture/Update",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "oImage",
-        "Type": "Core.Entities.Image",
+        "Name": "oPicture",
+        "Type": "Core.Entities.Picture",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "Core.Entities.Image",
+        "Type": "Core.Entities.Picture",
         "MediaTypes": [
           "text/plain",
           "application/json",

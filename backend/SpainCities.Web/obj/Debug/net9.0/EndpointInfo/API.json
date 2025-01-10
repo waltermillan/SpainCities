@@ -430,10 +430,10 @@
         }
       }
     },
-    "/api/Image/GetAll": {
+    "/api/Picture/GetAll": {
       "get": {
         "tags": [
-          "Image"
+          "Picture"
         ],
         "responses": {
           "200": {
@@ -443,7 +443,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Image"
+                    "$ref": "#/components/schemas/Picture"
                   }
                 }
               },
@@ -451,7 +451,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Image"
+                    "$ref": "#/components/schemas/Picture"
                   }
                 }
               },
@@ -459,7 +459,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Image"
+                    "$ref": "#/components/schemas/Picture"
                   }
                 }
               }
@@ -488,10 +488,10 @@
         }
       }
     },
-    "/api/Image/Get": {
+    "/api/Picture/Get": {
       "get": {
         "tags": [
-          "Image"
+          "Picture"
         ],
         "parameters": [
           {
@@ -509,17 +509,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Image"
+                  "$ref": "#/components/schemas/Picture"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Image"
+                  "$ref": "#/components/schemas/Picture"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Image"
+                  "$ref": "#/components/schemas/Picture"
                 }
               }
             }
@@ -567,26 +567,26 @@
         }
       }
     },
-    "/api/Image/Add": {
+    "/api/Picture/Add": {
       "post": {
         "tags": [
-          "Image"
+          "Picture"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Image"
+                "$ref": "#/components/schemas/Picture"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Image"
+                "$ref": "#/components/schemas/Picture"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Image"
+                "$ref": "#/components/schemas/Picture"
               }
             }
           }
@@ -597,17 +597,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Image"
+                  "$ref": "#/components/schemas/Picture"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Image"
+                  "$ref": "#/components/schemas/Picture"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Image"
+                  "$ref": "#/components/schemas/Picture"
                 }
               }
             }
@@ -635,26 +635,26 @@
         }
       }
     },
-    "/api/Image/Update": {
+    "/api/Picture/Update": {
       "put": {
         "tags": [
-          "Image"
+          "Picture"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Image"
+                "$ref": "#/components/schemas/Picture"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Image"
+                "$ref": "#/components/schemas/Picture"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Image"
+                "$ref": "#/components/schemas/Picture"
               }
             }
           }
@@ -665,17 +665,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Image"
+                  "$ref": "#/components/schemas/Picture"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Image"
+                  "$ref": "#/components/schemas/Picture"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Image"
+                  "$ref": "#/components/schemas/Picture"
                 }
               }
             }
@@ -723,10 +723,10 @@
         }
       }
     },
-    "/api/Image/Delete/{id}": {
+    "/api/Picture/Delete/{id}": {
       "delete": {
         "tags": [
-          "Image"
+          "Picture"
         ],
         "parameters": [
           {
@@ -1448,7 +1448,7 @@
         },
         "additionalProperties": false
       },
-      "Image": {
+      "Picture": {
         "type": "object",
         "properties": {
           "id": {

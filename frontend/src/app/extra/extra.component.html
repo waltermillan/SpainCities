@@ -14,17 +14,17 @@
 <p><strong>Ciudades más importantes:</strong> {{ cities }}</p>
 
 <!-- Carrusel de imágenes -->
-<div *ngIf="images.length">
+<div *ngIf="pictures.length">
   <!-- Contenedor del Carrusel -->
   <div class="carousel-container">
     <!-- Imagen actual -->
     <div class="carousel-slide">
-      <img [src]="images[currentIndex]" alt="Imagen del carrusel" class="carousel-image">
+      <img [src]="pictures[currentIndex]" alt="Imagen del carrusel" class="carousel-image">
     </div>
 
     <!-- Botones de navegación -->
-    <button (click)="prevImage()" class="carousel-btn prev-btn">❮</button>
-    <button (click)="nextImage()" class="carousel-btn next-btn">❯</button>
+    <button (click)="prevPicture()" class="carousel-btn prev-btn">❮</button>
+    <button (click)="nextPicture()" class="carousel-btn next-btn">❯</button>
   </div>
 </div>
 

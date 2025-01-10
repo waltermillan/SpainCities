@@ -3,92 +3,28 @@
   "WorkspaceRootPath": "C:\\proyectos\\.NET Core\\SpainCities\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E70F2323-E983-419F-855E-76DBCAD75C57}|SpainCities.Infrastructure\\Infrastructure.csproj|c:\\proyectos\\.net core\\spaincities\\spaincities.infrastructure\\unitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E70F2323-E983-419F-855E-76DBCAD75C57}|SpainCities.Infrastructure\\Infrastructure.csproj|solutionrelative:spaincities.infrastructure\\unitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A06C23F8-2E54-4D47-A38A-158E57133CF5}|SpainCities.Core\\Core.csproj|c:\\proyectos\\.net core\\spaincities\\spaincities.core\\interfases\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A06C23F8-2E54-4D47-A38A-158E57133CF5}|SpainCities.Core\\Core.csproj|solutionrelative:spaincities.core\\interfases\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A06C23F8-2E54-4D47-A38A-158E57133CF5}|SpainCities.Core\\Core.csproj|c:\\proyectos\\.net core\\spaincities\\spaincities.core\\interfases\\iprovince.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A06C23F8-2E54-4D47-A38A-158E57133CF5}|SpainCities.Core\\Core.csproj|solutionrelative:spaincities.core\\interfases\\iprovince.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A06C23F8-2E54-4D47-A38A-158E57133CF5}|SpainCities.Core\\Core.csproj|c:\\proyectos\\.net core\\spaincities\\spaincities.core\\interfases\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A06C23F8-2E54-4D47-A38A-158E57133CF5}|SpainCities.Core\\Core.csproj|solutionrelative:spaincities.core\\interfases\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{550F10FE-54FF-4827-9BDD-61C72A62CBF2}|SpainCities.Web\\API.csproj|c:\\proyectos\\.net core\\spaincities\\spaincities.web\\extensions\\applicationserviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{550F10FE-54FF-4827-9BDD-61C72A62CBF2}|SpainCities.Web\\API.csproj|solutionrelative:spaincities.web\\extensions\\applicationserviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{550F10FE-54FF-4827-9BDD-61C72A62CBF2}|SpainCities.Web\\API.csproj|c:\\proyectos\\.net core\\spaincities\\spaincities.web\\helpers\\params.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{550F10FE-54FF-4827-9BDD-61C72A62CBF2}|SpainCities.Web\\API.csproj|solutionrelative:spaincities.web\\helpers\\params.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{550F10FE-54FF-4827-9BDD-61C72A62CBF2}|SpainCities.Web\\API.csproj|c:\\proyectos\\.net core\\spaincities\\spaincities.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{550F10FE-54FF-4827-9BDD-61C72A62CBF2}|SpainCities.Web\\API.csproj|solutionrelative:spaincities.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A06C23F8-2E54-4D47-A38A-158E57133CF5}|SpainCities.Core\\Core.csproj|c:\\proyectos\\.net core\\spaincities\\spaincities.core\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A06C23F8-2E54-4D47-A38A-158E57133CF5}|SpainCities.Core\\Core.csproj|solutionrelative:spaincities.core\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A06C23F8-2E54-4D47-A38A-158E57133CF5}|SpainCities.Core\\Core.csproj|c:\\proyectos\\.net core\\spaincities\\spaincities.core\\entities\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A06C23F8-2E54-4D47-A38A-158E57133CF5}|SpainCities.Core\\Core.csproj|solutionrelative:spaincities.core\\entities\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A06C23F8-2E54-4D47-A38A-158E57133CF5}|SpainCities.Core\\Core.csproj|c:\\proyectos\\.net core\\spaincities\\spaincities.core\\entities\\province.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A06C23F8-2E54-4D47-A38A-158E57133CF5}|SpainCities.Core\\Core.csproj|solutionrelative:spaincities.core\\entities\\province.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A06C23F8-2E54-4D47-A38A-158E57133CF5}|SpainCities.Core\\Core.csproj|c:\\proyectos\\.net core\\spaincities\\spaincities.core\\entities\\region.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A06C23F8-2E54-4D47-A38A-158E57133CF5}|SpainCities.Core\\Core.csproj|solutionrelative:spaincities.core\\entities\\region.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A06C23F8-2E54-4D47-A38A-158E57133CF5}|SpainCities.Core\\Core.csproj|c:\\proyectos\\.net core\\spaincities\\spaincities.core\\entities\\image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A06C23F8-2E54-4D47-A38A-158E57133CF5}|SpainCities.Core\\Core.csproj|solutionrelative:spaincities.core\\entities\\image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A06C23F8-2E54-4D47-A38A-158E57133CF5}|SpainCities.Core\\Core.csproj|c:\\proyectos\\.net core\\spaincities\\spaincities.core\\interfases\\icity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A06C23F8-2E54-4D47-A38A-158E57133CF5}|SpainCities.Core\\Core.csproj|solutionrelative:spaincities.core\\interfases\\icity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A06C23F8-2E54-4D47-A38A-158E57133CF5}|SpainCities.Core\\Core.csproj|c:\\proyectos\\.net core\\spaincities\\spaincities.core\\interfases\\iimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A06C23F8-2E54-4D47-A38A-158E57133CF5}|SpainCities.Core\\Core.csproj|solutionrelative:spaincities.core\\interfases\\iimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A06C23F8-2E54-4D47-A38A-158E57133CF5}|SpainCities.Core\\Core.csproj|c:\\proyectos\\.net core\\spaincities\\spaincities.core\\interfases\\iregion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A06C23F8-2E54-4D47-A38A-158E57133CF5}|SpainCities.Core\\Core.csproj|solutionrelative:spaincities.core\\interfases\\iregion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E70F2323-E983-419F-855E-76DBCAD75C57}|SpainCities.Infrastructure\\Infrastructure.csproj|c:\\proyectos\\.net core\\spaincities\\spaincities.infrastructure\\repositories\\picturerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E70F2323-E983-419F-855E-76DBCAD75C57}|SpainCities.Infrastructure\\Infrastructure.csproj|solutionrelative:spaincities.infrastructure\\repositories\\picturerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E70F2323-E983-419F-855E-76DBCAD75C57}|SpainCities.Infrastructure\\Infrastructure.csproj|c:\\proyectos\\.net core\\spaincities\\spaincities.infrastructure\\data\\spaincitiescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E70F2323-E983-419F-855E-76DBCAD75C57}|SpainCities.Infrastructure\\Infrastructure.csproj|solutionrelative:spaincities.infrastructure\\data\\spaincitiescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E70F2323-E983-419F-855E-76DBCAD75C57}|SpainCities.Infrastructure\\Infrastructure.csproj|c:\\proyectos\\.net core\\spaincities\\spaincities.infrastructure\\repositories\\cityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E70F2323-E983-419F-855E-76DBCAD75C57}|SpainCities.Infrastructure\\Infrastructure.csproj|solutionrelative:spaincities.infrastructure\\repositories\\cityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A06C23F8-2E54-4D47-A38A-158E57133CF5}|SpainCities.Core\\Core.csproj|c:\\proyectos\\.net core\\spaincities\\spaincities.core\\interfases\\ipicture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A06C23F8-2E54-4D47-A38A-158E57133CF5}|SpainCities.Core\\Core.csproj|solutionrelative:spaincities.core\\interfases\\ipicture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E70F2323-E983-419F-855E-76DBCAD75C57}|SpainCities.Infrastructure\\Infrastructure.csproj|c:\\proyectos\\.net core\\spaincities\\spaincities.infrastructure\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E70F2323-E983-419F-855E-76DBCAD75C57}|SpainCities.Infrastructure\\Infrastructure.csproj|solutionrelative:spaincities.infrastructure\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E70F2323-E983-419F-855E-76DBCAD75C57}|SpainCities.Infrastructure\\Infrastructure.csproj|c:\\proyectos\\.net core\\spaincities\\spaincities.infrastructure\\repositories\\imagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E70F2323-E983-419F-855E-76DBCAD75C57}|SpainCities.Infrastructure\\Infrastructure.csproj|solutionrelative:spaincities.infrastructure\\repositories\\imagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E70F2323-E983-419F-855E-76DBCAD75C57}|SpainCities.Infrastructure\\Infrastructure.csproj|c:\\proyectos\\.net core\\spaincities\\spaincities.infrastructure\\repositories\\provincerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E70F2323-E983-419F-855E-76DBCAD75C57}|SpainCities.Infrastructure\\Infrastructure.csproj|solutionrelative:spaincities.infrastructure\\repositories\\provincerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E70F2323-E983-419F-855E-76DBCAD75C57}|SpainCities.Infrastructure\\Infrastructure.csproj|c:\\proyectos\\.net core\\spaincities\\spaincities.infrastructure\\repositories\\regionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E70F2323-E983-419F-855E-76DBCAD75C57}|SpainCities.Infrastructure\\Infrastructure.csproj|solutionrelative:spaincities.infrastructure\\repositories\\regionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{550F10FE-54FF-4827-9BDD-61C72A62CBF2}|SpainCities.Web\\API.csproj|c:\\proyectos\\.net core\\spaincities\\spaincities.web\\controllers\\regioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{550F10FE-54FF-4827-9BDD-61C72A62CBF2}|SpainCities.Web\\API.csproj|solutionrelative:spaincities.web\\controllers\\regioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{550F10FE-54FF-4827-9BDD-61C72A62CBF2}|SpainCities.Web\\API.csproj|c:\\proyectos\\.net core\\spaincities\\spaincities.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{550F10FE-54FF-4827-9BDD-61C72A62CBF2}|SpainCities.Web\\API.csproj|solutionrelative:spaincities.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A06C23F8-2E54-4D47-A38A-158E57133CF5}|SpainCities.Core\\Core.csproj|c:\\proyectos\\.net core\\spaincities\\spaincities.core\\entities\\picture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A06C23F8-2E54-4D47-A38A-158E57133CF5}|SpainCities.Core\\Core.csproj|solutionrelative:spaincities.core\\entities\\picture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -98,149 +34,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ApplicationServiceExtensions.cs",
-              "DocumentMoniker": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Web\\Extensions\\ApplicationServiceExtensions.cs",
-              "RelativeDocumentMoniker": "SpainCities.Web\\Extensions\\ApplicationServiceExtensions.cs",
-              "ToolTip": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Web\\Extensions\\ApplicationServiceExtensions.cs",
-              "RelativeToolTip": "SpainCities.Web\\Extensions\\ApplicationServiceExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Infrastructure\\UnitOfWork\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "SpainCities.Infrastructure\\UnitOfWork\\UnitOfWork.cs",
+              "ToolTip": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Infrastructure\\UnitOfWork\\UnitOfWork.cs",
+              "RelativeToolTip": "SpainCities.Infrastructure\\UnitOfWork\\UnitOfWork.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAvwA0AAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T23:10:28.581Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BaseEntity.cs",
-              "DocumentMoniker": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Core\\Entities\\BaseEntity.cs",
-              "RelativeDocumentMoniker": "SpainCities.Core\\Entities\\BaseEntity.cs",
-              "ToolTip": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Core\\Entities\\BaseEntity.cs",
-              "RelativeToolTip": "SpainCities.Core\\Entities\\BaseEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T23:10:11.957Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "City.cs",
-              "DocumentMoniker": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Core\\Entities\\City.cs",
-              "RelativeDocumentMoniker": "SpainCities.Core\\Entities\\City.cs",
-              "ToolTip": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Core\\Entities\\City.cs",
-              "RelativeToolTip": "SpainCities.Core\\Entities\\City.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T23:09:58.464Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Image.cs",
-              "DocumentMoniker": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Core\\Entities\\Image.cs",
-              "RelativeDocumentMoniker": "SpainCities.Core\\Entities\\Image.cs",
-              "ToolTip": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Core\\Entities\\Image.cs",
-              "RelativeToolTip": "SpainCities.Core\\Entities\\Image.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T23:09:49.332Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Province.cs",
-              "DocumentMoniker": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Core\\Entities\\Province.cs",
-              "RelativeDocumentMoniker": "SpainCities.Core\\Entities\\Province.cs",
-              "ToolTip": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Core\\Entities\\Province.cs",
-              "RelativeToolTip": "SpainCities.Core\\Entities\\Province.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T23:09:48.164Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ICity.cs",
-              "DocumentMoniker": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Core\\Interfases\\ICity.cs",
-              "RelativeDocumentMoniker": "SpainCities.Core\\Interfases\\ICity.cs",
-              "ToolTip": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Core\\Interfases\\ICity.cs",
-              "RelativeToolTip": "SpainCities.Core\\Interfases\\ICity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T23:09:38.597Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IGenericRepository.cs",
-              "DocumentMoniker": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Core\\Interfases\\IGenericRepository.cs",
-              "RelativeDocumentMoniker": "SpainCities.Core\\Interfases\\IGenericRepository.cs",
-              "ToolTip": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Core\\Interfases\\IGenericRepository.cs",
-              "RelativeToolTip": "SpainCities.Core\\Interfases\\IGenericRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T23:09:35.135Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "IImage.cs",
-              "DocumentMoniker": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Core\\Interfases\\IImage.cs",
-              "RelativeDocumentMoniker": "SpainCities.Core\\Interfases\\IImage.cs",
-              "ToolTip": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Core\\Interfases\\IImage.cs",
-              "RelativeToolTip": "SpainCities.Core\\Interfases\\IImage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T23:09:30.333Z",
+              "WhenOpened": "2025-01-10T22:41:13.556Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "IProvince.cs",
-              "DocumentMoniker": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Core\\Interfases\\IProvince.cs",
-              "RelativeDocumentMoniker": "SpainCities.Core\\Interfases\\IProvince.cs",
-              "ToolTip": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Core\\Interfases\\IProvince.cs",
-              "RelativeToolTip": "SpainCities.Core\\Interfases\\IProvince.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T23:09:22.291Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "IRegion.cs",
-              "DocumentMoniker": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Core\\Interfases\\IRegion.cs",
-              "RelativeDocumentMoniker": "SpainCities.Core\\Interfases\\IRegion.cs",
-              "ToolTip": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Core\\Interfases\\IRegion.cs",
-              "RelativeToolTip": "SpainCities.Core\\Interfases\\IRegion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T23:09:20.189Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "IUnitOfWork.cs",
               "DocumentMoniker": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Core\\Interfases\\IUnitOfWork.cs",
               "RelativeDocumentMoniker": "SpainCities.Core\\Interfases\\IUnitOfWork.cs",
               "ToolTip": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Core\\Interfases\\IUnitOfWork.cs",
               "RelativeToolTip": "SpainCities.Core\\Interfases\\IUnitOfWork.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T23:09:16.584Z",
+              "WhenOpened": "2025-01-10T22:40:47.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SpainCitiesContext.cs",
+              "DocumentMoniker": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Infrastructure\\Data\\SpainCitiesContext.cs",
+              "RelativeDocumentMoniker": "SpainCities.Infrastructure\\Data\\SpainCitiesContext.cs",
+              "ToolTip": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Infrastructure\\Data\\SpainCitiesContext.cs",
+              "RelativeToolTip": "SpainCities.Infrastructure\\Data\\SpainCitiesContext.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAcwBAAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T22:35:09.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PictureRepository.cs",
+              "DocumentMoniker": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Infrastructure\\Repositories\\PictureRepository.cs",
+              "RelativeDocumentMoniker": "SpainCities.Infrastructure\\Repositories\\PictureRepository.cs",
+              "ToolTip": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Infrastructure\\Repositories\\PictureRepository.cs",
+              "RelativeToolTip": "SpainCities.Infrastructure\\Repositories\\PictureRepository.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAwwAYAAABqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T22:34:56.783Z",
               "EditorCaption": ""
             },
             {
@@ -273,145 +118,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Region.cs",
-              "DocumentMoniker": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Core\\Entities\\Region.cs",
-              "RelativeDocumentMoniker": "SpainCities.Core\\Entities\\Region.cs",
-              "ToolTip": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Core\\Entities\\Region.cs",
-              "RelativeToolTip": "SpainCities.Core\\Entities\\Region.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "IPicture.cs",
+              "DocumentMoniker": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Core\\Interfases\\IPicture.cs",
+              "RelativeDocumentMoniker": "SpainCities.Core\\Interfases\\IPicture.cs",
+              "ToolTip": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Core\\Interfases\\IPicture.cs",
+              "RelativeToolTip": "SpainCities.Core\\Interfases\\IPicture.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T22:56:21.141Z",
+              "WhenOpened": "2025-01-10T22:34:43.32Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Web\\Program.cs",
-              "RelativeDocumentMoniker": "SpainCities.Web\\Program.cs",
-              "ToolTip": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Web\\Program.cs",
-              "RelativeToolTip": "SpainCities.Web\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAABBAAAAAAAAAA==",
+              "Title": "Picture.cs",
+              "DocumentMoniker": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Core\\Entities\\Picture.cs",
+              "RelativeDocumentMoniker": "SpainCities.Core\\Entities\\Picture.cs",
+              "ToolTip": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Core\\Entities\\Picture.cs",
+              "RelativeToolTip": "SpainCities.Core\\Entities\\Picture.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T22:30:38.861Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Params.cs",
-              "DocumentMoniker": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Web\\Helpers\\Params.cs",
-              "RelativeDocumentMoniker": "SpainCities.Web\\Helpers\\Params.cs",
-              "ToolTip": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Web\\Helpers\\Params.cs",
-              "RelativeToolTip": "SpainCities.Web\\Helpers\\Params.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T22:31:41.364Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ImageRepository.cs",
-              "DocumentMoniker": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Infrastructure\\Repositories\\ImageRepository.cs",
-              "RelativeDocumentMoniker": "SpainCities.Infrastructure\\Repositories\\ImageRepository.cs",
-              "ToolTip": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Infrastructure\\Repositories\\ImageRepository.cs",
-              "RelativeToolTip": "SpainCities.Infrastructure\\Repositories\\ImageRepository.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAwwBwAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T22:59:49.546Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ProvinceRepository.cs",
-              "DocumentMoniker": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Infrastructure\\Repositories\\ProvinceRepository.cs",
-              "RelativeDocumentMoniker": "SpainCities.Infrastructure\\Repositories\\ProvinceRepository.cs",
-              "ToolTip": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Infrastructure\\Repositories\\ProvinceRepository.cs",
-              "RelativeToolTip": "SpainCities.Infrastructure\\Repositories\\ProvinceRepository.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAowAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T22:59:52.847Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "RegionRepository.cs",
-              "DocumentMoniker": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Infrastructure\\Repositories\\RegionRepository.cs",
-              "RelativeDocumentMoniker": "SpainCities.Infrastructure\\Repositories\\RegionRepository.cs",
-              "ToolTip": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Infrastructure\\Repositories\\RegionRepository.cs",
-              "RelativeToolTip": "SpainCities.Infrastructure\\Repositories\\RegionRepository.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAawAsAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T22:59:58.728Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "GenericRepository.cs",
-              "DocumentMoniker": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Infrastructure\\Repositories\\GenericRepository.cs",
-              "RelativeDocumentMoniker": "SpainCities.Infrastructure\\Repositories\\GenericRepository.cs",
-              "ToolTip": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Infrastructure\\Repositories\\GenericRepository.cs",
-              "RelativeToolTip": "SpainCities.Infrastructure\\Repositories\\GenericRepository.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAArwDMAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T22:59:46.183Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "CityRepository.cs",
-              "DocumentMoniker": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Infrastructure\\Repositories\\CityRepository.cs",
-              "RelativeDocumentMoniker": "SpainCities.Infrastructure\\Repositories\\CityRepository.cs",
-              "ToolTip": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Infrastructure\\Repositories\\CityRepository.cs",
-              "RelativeToolTip": "SpainCities.Infrastructure\\Repositories\\CityRepository.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAwwCcAAABvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T22:29:27.637Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Web\\appsettings.json",
-              "RelativeDocumentMoniker": "SpainCities.Web\\appsettings.json",
-              "ToolTip": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Web\\appsettings.json",
-              "RelativeToolTip": "SpainCities.Web\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-06T22:25:22.504Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "RegionController.cs",
-              "DocumentMoniker": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Web\\Controllers\\RegionController.cs",
-              "RelativeDocumentMoniker": "SpainCities.Web\\Controllers\\RegionController.cs",
-              "ToolTip": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Web\\Controllers\\RegionController.cs",
-              "RelativeToolTip": "SpainCities.Web\\Controllers\\RegionController.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAWwAoAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T22:20:17.534Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "SpainCitiesContext.cs",
-              "DocumentMoniker": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Infrastructure\\Data\\SpainCitiesContext.cs",
-              "RelativeDocumentMoniker": "SpainCities.Infrastructure\\Data\\SpainCitiesContext.cs",
-              "ToolTip": "C:\\proyectos\\.NET Core\\SpainCities\\SpainCities.Infrastructure\\Data\\SpainCitiesContext.cs",
-              "RelativeToolTip": "SpainCities.Infrastructure\\Data\\SpainCitiesContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T22:20:35.428Z",
+              "WhenOpened": "2025-01-10T22:34:24.385Z",
               "EditorCaption": ""
             }
           ]

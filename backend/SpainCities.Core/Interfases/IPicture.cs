@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Core.Interfases
 {
-    public interface IImageRepository : IGenericRepository<Image>
+    public interface IPictureRepository : IGenericRepository<Picture>
     {
     }
 }

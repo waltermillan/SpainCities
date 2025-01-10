@@ -14,7 +14,7 @@ namespace Infrastructure.Data
         public virtual DbSet<City> Cities { get; set; }
         public virtual DbSet<Province> Provinces { get; set; }
         public virtual DbSet<Region> Regions { get; set; }
-        public virtual DbSet<Image> Images { get; set; }
+        public virtual DbSet<Picture> Pictures { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

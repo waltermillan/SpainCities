@@ -4,25 +4,25 @@ using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Repositories;
-public class ImageRepository(SpainCitiesContext context) : GenericRepository<Image>(context), IImageRepository
+public class PictureRepository(SpainCitiesContext context) : GenericRepository<Picture>(context), IPictureRepository
 {
-    public override async Task<Image> GetByIdAsync(int id)
+    public override async Task<Picture> GetByIdAsync(int id)
     {
-        return await _context.Images
+        return await _context.Pictures
                           .FirstOrDefaultAsync(p => p.Id == id);
 
     }
 
-    public override async Task<IEnumerable<Image>> GetAllAsync()
+    public override async Task<IEnumerable<Picture>> GetAllAsync()
     {
-        return await _context.Images
+        return await _context.Pictures
                             .ToListAsync();
     }
 
-    public override async Task<(int totalRegistros, IEnumerable<Image> registros)> GetAllAsync(
+    public override async Task<(int totalRegistros, IEnumerable<Picture> registros)> GetAllAsync(
                 int pageIndex, int pageSize, string search)
     {
-        var consulta = _context.Images as IQueryable<Image>;
+        var consulta = _context.Pictures as IQueryable<Picture>;
 
         if (!String.IsNullOrEmpty(search))
         {
