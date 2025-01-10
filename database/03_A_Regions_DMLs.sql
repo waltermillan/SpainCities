@@ -1,0 +1,22 @@
+USE [SpainCitiesDb]
+GO
+
+INSERT INTO [dbo].[Regions]([Id],[Name],[Population],[Capital],[Surface])VALUES('1','Andalucía','8584147','Sevilla','87597')
+INSERT INTO [dbo].[Regions]([Id],[Name],[Population],[Capital],[Surface])VALUES('2','Aragón','1341289','Zaragoza','47720')
+INSERT INTO [dbo].[Regions]([Id],[Name],[Population],[Capital],[Surface])VALUES('3','Canarias','2213016','Las Palmas de Gran Canaria y Santa Cruz de Tenerife','7447')
+INSERT INTO [dbo].[Regions]([Id],[Name],[Population],[Capital],[Surface])VALUES('4','Cantabria','588387','Santander','5321')
+INSERT INTO [dbo].[Regions]([Id],[Name],[Population],[Capital],[Surface])VALUES('5','Castilla y León','2383703','Valladolid','94227')
+INSERT INTO [dbo].[Regions]([Id],[Name],[Population],[Capital],[Surface])VALUES('6','Castilla-La Mancha','2084086','Toledo','79462')
+INSERT INTO [dbo].[Regions]([Id],[Name],[Population],[Capital],[Surface])VALUES('7','Cataluña','7901963','Barcelona','32091')
+INSERT INTO [dbo].[Regions]([Id],[Name],[Population],[Capital],[Surface])VALUES('8','Comunidad de Madrid','6871903','Madrid','8028')
+INSERT INTO [dbo].[Regions]([Id],[Name],[Population],[Capital],[Surface])VALUES('9','Comunidad Foral de Navarra','672155','Pamplona ','10390')
+INSERT INTO [dbo].[Regions]([Id],[Name],[Population],[Capital],[Surface])VALUES('10','Comunidad Valenciana','5216195','Valencia','23254')
+INSERT INTO [dbo].[Regions]([Id],[Name],[Population],[Capital],[Surface])VALUES('11','Extremadura','1054306','Mérida','41635')
+INSERT INTO [dbo].[Regions]([Id],[Name],[Population],[Capital],[Surface])VALUES('12','Galicia','2699424','Santiago de Compostela','29575')
+INSERT INTO [dbo].[Regions]([Id],[Name],[Population],[Capital],[Surface])VALUES('13','Islas Baleares','1209906','Palma','4992')
+INSERT INTO [dbo].[Regions]([Id],[Name],[Population],[Capital],[Surface])VALUES('14','La Rioja','322282','Logroño','5045')
+INSERT INTO [dbo].[Regions]([Id],[Name],[Population],[Capital],[Surface])VALUES('15','País Vasco','2216302','Vitoria','7230')
+INSERT INTO [dbo].[Regions]([Id],[Name],[Population],[Capital],[Surface])VALUES('16','Principado de Asturias','1006060','Oviedo','10602')
+INSERT INTO [dbo].[Regions]([Id],[Name],[Population],[Capital],[Surface])VALUES('17','Región de Murcia','1551692','Murcia','11314')
+INSERT INTO [dbo].[Regions]([Id],[Name],[Population],[Capital],[Surface])VALUES('18','Ceuta','83052','Ceuta','19')
+INSERT INTO [dbo].[Regions]([Id],[Name],[Population],[Capital],[Surface])VALUES('19','Melilla','85493','Melilla','13')
