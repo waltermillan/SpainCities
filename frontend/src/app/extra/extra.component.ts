@@ -1,6 +1,8 @@
 import { Component, OnInit, Inject, PLATFORM_ID } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { DatosService } from '../services/datos.service';  // Asegúrate de que el servicio esté bien importado
+import { CityService } from '../services/city.service';  // Asegúrate de que el servicio esté bien importado
+import { ProvinceService } from '../services/province.service';  // Asegúrate de que el servicio esté bien importado
+import { RegionService } from '../services/region.service';  // Asegúrate de que el servicio esté bien importado
 import { Region } from '../models/region.model';
 import { Province } from '../models/province.model';
 import { City } from '../models/city.model';
@@ -28,7 +30,9 @@ export class ExtraComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private datosService: DatosService,
+    private regionService: RegionService,
+    private cityService:CityService,
+    private provinceService:ProvinceService,
     private pictureService: PictureService,
     @Inject(PLATFORM_ID) private platformId: Object,
   ) {}
@@ -59,7 +63,7 @@ export class ExtraComponent implements OnInit {
 
   // Método para cargar todas las provincias
   loadProvinces(regionId: number): void {
-    this.datosService.getProvincesByRegion(regionId).subscribe((response: any) => {
+    this.provinceService.getProvincesByRegion(regionId).subscribe((response: any) => {
       this.provinces = response.provinces;
       // Concatenar las provincias con "/"
       this.provincesString = this.provinces.map(province => province.name).join(' / ');
@@ -69,25 +73,25 @@ export class ExtraComponent implements OnInit {
 
   // Método para obtener la información de la región
   getRegionInfo(regionId: number): void {
-    this.datosService.getRegion(regionId).subscribe((data: Region) => {
+    this.regionService.getRegion(regionId).subscribe((data: Region) => {
       this.region = data.name;
       this.population = data.population;
       this.capital = data.capital;
       this.surface = data.surface;
     });
 
-    this.datosService.getProvince(regionId).subscribe((data: Province) => {
+    this.provinceService.getProvince(regionId).subscribe((data: Province) => {
       this.province = data.name;
     });
 
-    this.datosService.getCity(regionId).subscribe((data: City) => {
+    this.cityService.getCity(regionId).subscribe((data: City) => {
       this.cities = data.name;
     });
   }
 
   // Método para cargar las ciudades y formatearlas como una cadena separada por "/"
   loadCities(regionId: number): void {
-    this.datosService.getCitiesByRegion(regionId).subscribe((cities: City[]) => {
+    this.cityService.getCitiesByRegion(regionId).subscribe((cities: City[]) => {
       // Unir todas las ciudades con un "/"
       this.cities = cities.map(city => city.name).join(' / ');
     });

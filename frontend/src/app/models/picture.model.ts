@@ -1,4 +1,4 @@
-export interface Image {
+export interface Picture {
     id: number;
     RegionId: number;
     content: string;
