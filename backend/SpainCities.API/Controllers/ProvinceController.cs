@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace API.Controllers;
 
-[Route("api/[controller]")]
+[Route("api/provinces")]
 public class ProvinceController : BaseApiController
 {
     private readonly IUnitOfWork _unitOfWork;
@@ -19,7 +19,7 @@ public class ProvinceController : BaseApiController
     }
 
     // GET: api/Provinces/GetAllByRegion/{regionId} (Nuevo método)
-    [HttpGet("GetAllByRegion/{regionId}")]
+    [HttpGet("region/{regionId}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<ActionResult<object>> GetAllByRegion(int regionId)
@@ -52,7 +52,7 @@ public class ProvinceController : BaseApiController
     }
 
     // GET: api/Provinces/Get (Método existente)
-    [HttpGet("Get")]
+    [HttpGet("{id}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -66,7 +66,7 @@ public class ProvinceController : BaseApiController
     }
 
     // POST: api/Provinces/Add (Método existente)
-    [HttpPost("Add")]
+    [HttpPost]
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<ActionResult<Province>> Post(Province oProvince)
@@ -85,7 +85,7 @@ public class ProvinceController : BaseApiController
     }
 
     // PUT: api/Provinces/Update/{id} (Método existente)
-    [HttpPut("Update")]
+    [HttpPut("{id}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -102,7 +102,7 @@ public class ProvinceController : BaseApiController
     }
 
     // DELETE: api/Provinces/Delete/{id} (Método existente)
-    [HttpDelete("Delete/{id}")]
+    [HttpDelete("{id}")]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<IActionResult> Delete(int id)

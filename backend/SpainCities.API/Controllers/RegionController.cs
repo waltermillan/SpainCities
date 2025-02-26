@@ -4,13 +4,13 @@ using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers;
-[Route("api/[controller]")]
+[Route("api/regions")]
 public class RegionController(IUnitOfWork unitOfWork, IMapper mapper) : BaseApiController
 {
     private readonly IUnitOfWork _unitOfWork = unitOfWork;
     private readonly IMapper _mapper = mapper;
 
-    [HttpGet("GetAll")]
+    [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<ActionResult<IEnumerable<Region>>> Get()
@@ -21,7 +21,7 @@ public class RegionController(IUnitOfWork unitOfWork, IMapper mapper) : BaseApiC
         return _mapper.Map<List<Region>>(region);
     }
 
-    [HttpGet("Get")]
+    [HttpGet("{id}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -35,7 +35,7 @@ public class RegionController(IUnitOfWork unitOfWork, IMapper mapper) : BaseApiC
     }
 
     //POST: api/Region
-    [HttpPost("Add")]
+    [HttpPost]
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<ActionResult<Region>> Post(Region oRegion)
@@ -53,7 +53,7 @@ public class RegionController(IUnitOfWork unitOfWork, IMapper mapper) : BaseApiC
 
 
     //PUT: api/Regions/4
-    [HttpPut("Update")]
+    [HttpPut("{id}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -69,7 +69,7 @@ public class RegionController(IUnitOfWork unitOfWork, IMapper mapper) : BaseApiC
     }
 
     //DELETE: api/Regions
-    [HttpDelete("Delete/{id}")]
+    [HttpDelete("{id}")]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<IActionResult> Delete(int id)

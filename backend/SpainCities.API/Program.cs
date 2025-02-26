@@ -1,5 +1,8 @@
 using API.Extensions;
+using Core.Interfases;
+using Core.Services;
 using Infrastructure.Data;
+using Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 
@@ -10,6 +13,11 @@ builder.Services.AddAutoMapper(Assembly.GetEntryAssembly());
 // Add services to the container.
 builder.Services.ConfigureCors();
 builder.Services.AddAplicacionServices();
+
+builder.Services.AddScoped<IRegionRepository, RegionRepository>();
+builder.Services.AddScoped<ICityRepository, CityRepository>();
+builder.Services.AddScoped<IProvinceRepository, ProvinceRepository>();
+builder.Services.AddScoped<RegionDTOService>();
 
 builder.Services.AddControllers();
 
