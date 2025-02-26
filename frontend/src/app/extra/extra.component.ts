@@ -1,8 +1,8 @@
 import { Component, OnInit, Inject, PLATFORM_ID } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { CityService } from '../services/city.service';  // Asegúrate de que el servicio esté bien importado
-import { ProvinceService } from '../services/province.service';  // Asegúrate de que el servicio esté bien importado
-import { RegionService } from '../services/region.service';  // Asegúrate de que el servicio esté bien importado
+import { CityService } from '../services/city.service';  
+import { ProvinceService } from '../services/province.service';  
+import { RegionService } from '../services/region.service';
 import { Region } from '../models/region.model';
 import { Province } from '../models/province.model';
 import { City } from '../models/city.model';
@@ -17,16 +17,16 @@ import { isPlatformBrowser } from '@angular/common';
 export class ExtraComponent implements OnInit {
 
   pictures: string[] = [];
-  currentIndex: number = 0;  // Índice de la imagen actual
+  currentIndex: number = 0;
   province: string = '';
-  cities: string = '';  // Aquí almacenaremos las ciudades separadas por "/"
+  cities: string = ''; 
   region: string = '';
   population: number = 0;
   surface: number = 0;
   capital: string = '';
-  picture: string = '';  // Si deseas agregar una imagen específica
-  provinces: Province[] = [];  // Array para almacenar las provincias
-  provincesString: string = '';  // Aquí almacenaremos la cadena de provincias concatenadas
+  picture: string = '';
+  provinces: Province[] = [];
+  provincesString: string = ''; 
 
   constructor(
     private route: ActivatedRoute,
@@ -41,24 +41,22 @@ export class ExtraComponent implements OnInit {
     // Obtener el ID de la región desde la URL
     const regionId = this.route.snapshot.queryParamMap.get('NroRegion');
     if (regionId) {
-      this.getRegionInfo(Number(regionId));  // Llama a la función para obtener la información de la región
+      this.getRegionInfo(Number(regionId)); 
       this.loadPictures(Number(regionId));
 
-      // Llamar a la función para cargar las provincias
       this.loadProvinces(Number(regionId));
 
-      // Llamar a la función para cargar las ciudades
       this.loadCities(Number(regionId));
 
       // Solo se ejecuta en el navegador
       if (isPlatformBrowser(this.platformId)) {
-        setInterval(() => this.nextPicture(), 5000);  // Esto solo se ejecutará en el navegador
+        setInterval(() => this.nextPicture(), 5000);
       }
     }
   }
 
   closeWindow(): void {
-    window.close();  // Cierra la ventana actual
+    window.close();
   }
 
   // Método para cargar todas las provincias
@@ -67,7 +65,6 @@ export class ExtraComponent implements OnInit {
       this.provinces = response.provinces;
       // Concatenar las provincias con "/"
       this.provincesString = this.provinces.map(province => province.name).join(' / ');
-      //console.log('Provincias concatenadas:', this.provincesString); // Verifica la cadena resultante
     });
   }
 
@@ -102,21 +99,20 @@ export class ExtraComponent implements OnInit {
     ids.forEach(id => {
       this.pictureService.getPicture(id).subscribe({
         next: (data) => {
-          this.pictures.push(data.imageBase64);  // Almacena la imagen base64
+          this.pictures.push(data.imageBase64);
         },
         error: (error) => {
-          //console.error('Error al cargar la imagen:', error);
+          console.error('Error al cargar la imagen:', error);
         },
         complete: () => {
-          //console.log('Carga de imágenes completada.');
+          console.log('Carga de imágenes completada.');
         }
       });
     });
   }
 
   getPictureIdsForRegion(regionId: number): number[] {
-    // Aquí puedes definir la lógica de cómo se asignan los IDs dependiendo del RegionId.
-    // Como ejemplo, podrías tener diferentes rangos de IDs o una lista fija.
+
     switch (regionId) {
       case 1:
         return [59, 1, 2, 3, 38];  // Carga imágenes para la región 1
