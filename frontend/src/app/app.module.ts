@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { provideHttpClient, withInterceptorsFromDi, withFetch   } from '@angular/common/http';
 
-import { AppRoutingModule } from './app-routing.module';  // Asegúrate de importar el AppRoutingModule
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MapComponent } from './map/map.component';
 import { ExtraComponent } from './extra/extra.component';
@@ -10,7 +10,7 @@ import { registerLocaleData } from '@angular/common';
 import localeEs from '@angular/common/locales/es';
 import { LOCALE_ID } from '@angular/core';
 
-// Registra la localización en español (España)
+// Register localization in Spanish (Spain)
 registerLocaleData(localeEs, 'es');
 
 @NgModule({
@@ -25,7 +25,7 @@ registerLocaleData(localeEs, 'es');
   ],
   providers: [
     provideHttpClient(withInterceptorsFromDi(), withFetch()),
-    {provide: LOCALE_ID, useValue: 'es' } // Establece la localización a 'es' (España)
+    {provide: LOCALE_ID, useValue: 'es' } // Set the locale to 'es' (Spain)
   ],
   bootstrap: [AppComponent]
 })

@@ -14,16 +14,13 @@ namespace API.Controllers
             _regionDTOService = regionDTOService;
         }
 
-        // Obtener un CustomerDTO por id
         [HttpGet("{id}")]
         public async Task<IActionResult> GetRegionDTO(int id)
         {
             var customerDTO = await _regionDTOService.GetRegionDTOAsync(id);
 
-            if (customerDTO == null)
-            {
+            if (customerDTO is null)
                 return NotFound(); // o algún otro manejo de error
-            }
 
             return Ok(customerDTO);
         }

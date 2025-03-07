@@ -8,20 +8,17 @@ namespace Infrastructure.Repositories;
 public class CityRepository(SpainCitiesContext context) : GenericRepository<City>(context), ICityRepository
 {
 
-    // Método existente
     public override async Task<City> GetByIdAsync(int id)
     {
         return await _context.Cities
                           .FirstOrDefaultAsync(p => p.Id == id);
     }
 
-    // Método existente
     public override async Task<IEnumerable<City>> GetAllAsync()
     {
         return await _context.Cities.ToListAsync();
     }
 
-    // Método para obtener ciudades por RegionId
     public async Task<IEnumerable<City>> GetCitiesByRegionIdAsync(int regionId)
     {
         return await _context.Cities
@@ -29,7 +26,6 @@ public class CityRepository(SpainCitiesContext context) : GenericRepository<City
                              .ToListAsync();
     }
 
-    // Método existente para paginación y búsqueda
     public override async Task<(int totalRegistros, IEnumerable<City> registros)> GetAllAsync(
                 int pageIndex, int pageSize, string search)
     {

@@ -20,10 +20,8 @@ public class UnitOfWork : IUnitOfWork, IDisposable
     {
         get
         {
-            if (_cities == null)
-            {
+            if (_cities is null)
                 _cities = new CityRepository(_context);
-            }
             return _cities;
         }
     }
@@ -32,10 +30,8 @@ public class UnitOfWork : IUnitOfWork, IDisposable
     {
         get
         {
-            if (_provinces == null)
-            {
+            if (_provinces is null)
                 _provinces = new ProvinceRepository(_context);
-            }
             return _provinces;
         }
     }
@@ -44,10 +40,8 @@ public class UnitOfWork : IUnitOfWork, IDisposable
     {
         get
         {
-            if (_regions == null)
-            {
+            if (_regions is null)
                 _regions = new RegionRepository(_context);
-            }
             return _regions;
         }
     }
@@ -55,10 +49,8 @@ public class UnitOfWork : IUnitOfWork, IDisposable
     {
         get
         {
-            if (_pictures == null)
-            {
+            if (_pictures is null)
                 _pictures = new PictureRepository(_context);
-            }
             return _pictures;
         }
     }

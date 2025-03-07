@@ -28,13 +28,13 @@ public class RegionController(IUnitOfWork unitOfWork, IMapper mapper) : BaseApiC
     public async Task<ActionResult<Region>> Get(int id)
     {
         var region = await _unitOfWork.Regions.GetByIdAsync(id);
-        if (region == null)
+
+        if (region is null)
             return NotFound();
 
         return _mapper.Map<Region>(region);
     }
 
-    //POST: api/Region
     [HttpPost]
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -43,23 +43,21 @@ public class RegionController(IUnitOfWork unitOfWork, IMapper mapper) : BaseApiC
         var region = _mapper.Map<Region>(oRegion);
         _unitOfWork.Regions.Add(region);
         await _unitOfWork.SaveAsync();
-        if (region == null)
-        {
+
+        if (region is null)
             return BadRequest();
-        }
+
         oRegion.Id = region.Id;
         return CreatedAtAction(nameof(Post), new { id = oRegion.Id }, oRegion);
     }
 
-
-    //PUT: api/Regions/4
     [HttpPut("{id}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<ActionResult<Region>> Put([FromBody] Region oRegion)
     {
-        if (oRegion == null)
+        if (oRegion is null)
             return NotFound();
 
         var region = _mapper.Map<Region>(oRegion);
@@ -68,14 +66,14 @@ public class RegionController(IUnitOfWork unitOfWork, IMapper mapper) : BaseApiC
         return oRegion;
     }
 
-    //DELETE: api/Regions
     [HttpDelete("{id}")]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<IActionResult> Delete(int id)
     {
         var region = await _unitOfWork.Regions.GetByIdAsync(id);
-        if (region == null)
+
+        if (region is null)
             return NotFound();
 
         _unitOfWork.Regions.Remove(region);

@@ -52,7 +52,7 @@ using (var scope = app.Services.CreateScope())
     catch (Exception ex)
     {
         var logger = loggerFactory.CreateLogger<Program>();
-        logger.LogError(ex, "Ocurrió un error durante la migración");
+        logger.LogError(ex, "An error occurred during migration");
     }
 }
 

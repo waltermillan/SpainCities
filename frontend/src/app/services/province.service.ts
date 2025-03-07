@@ -17,7 +17,6 @@ export class ProvinceService {
     return this.http.get<Province>(url);
   }
 
-  // Método para obtener las provincias por región
   getProvincesByRegion(regionId: number): Observable<any> {
     const url = `${this.apiUrl}region/${regionId}`;
     return this.http.get<any>(url);

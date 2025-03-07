@@ -34,13 +34,13 @@ public class PictureController : BaseApiController
     public async Task<ActionResult<Picture>> Get(int id)
     {
         var picture = await _unitOfWork.Pictures.GetByIdAsync(id);
-        if (picture == null)
+
+        if (picture is null)
             return NotFound();
 
         return _mapper.Map<Picture>(picture);
     }
 
-    //POST: api/Picture
     [HttpPost]
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -49,23 +49,21 @@ public class PictureController : BaseApiController
         var picture = _mapper.Map<Picture>(oPicture);
         _unitOfWork.Pictures.Add(picture);
         await _unitOfWork.SaveAsync();
-        if (picture == null)
-        {
+
+        if (picture is null)
             return BadRequest();
-        }
+
         oPicture.Id = picture.Id;
         return CreatedAtAction(nameof(Post), new { id = oPicture.Id }, oPicture);
     }
 
-
-    //PUT: api/Pictures/4
     [HttpPut("{id}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<ActionResult<Picture>> Put([FromBody] Picture oPicture)
     {
-        if (oPicture == null)
+        if (oPicture is null)
             return NotFound();
 
         var picture = _mapper.Map<Picture>(oPicture);
@@ -74,14 +72,14 @@ public class PictureController : BaseApiController
         return oPicture;
     }
 
-    //DELETE: api/Pictures
     [HttpDelete("{id}")]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<IActionResult> Delete(int id)
     {
         var picture = await _unitOfWork.Pictures.GetByIdAsync(id);
-        if (picture == null)
+
+        if (picture is null)
             return NotFound();
 
         _unitOfWork.Pictures.Remove(picture);
@@ -89,6 +87,4 @@ public class PictureController : BaseApiController
 
         return NoContent();
     }
-
-
 }

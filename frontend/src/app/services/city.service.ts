@@ -11,16 +11,14 @@ export class CityService {
 
   constructor(private http: HttpClient) {}
 
-  // Métodos existentes para obtener ciudad, región y provincia
   getCity(id: number): Observable<City> {
     const url = `${this.apiUrl}${id}`;
    
     return this.http.get<City>(url);
   }
 
-  // Nuevo método para obtener las ciudades por región
   getCitiesByRegion(regionId: number): Observable<City[]> {
     const url = `${this.apiUrl}region/${regionId}`;
-    return this.http.get<City[]>(url);  // Esperamos un array de objetos City
+    return this.http.get<City[]>(url);
   }
 }

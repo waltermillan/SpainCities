@@ -7,22 +7,15 @@
 <ng-template #otroContenido>
   <p><strong>Capital:</strong>  <strong style="color: darkgreen;"> {{capital }} </strong> </p> 
 </ng-template>
-<!-- Mostrar las provincias concatenadas -->
 <p><strong>Provincias:</strong> {{ provincesString }}</p>
-
-<!-- Mostrar las ciudades concatenadas -->
 <p><strong>Ciudades más importantes:</strong> {{ cities }}</p>
 
-<!-- Carrusel de imágenes -->
 <div *ngIf="pictures.length">
-  <!-- Contenedor del Carrusel -->
   <div class="carousel-container">
-    <!-- Imagen actual -->
     <div class="carousel-slide">
       <img [src]="pictures[currentIndex]" alt="Imagen del carrusel" class="carousel-image">
     </div>
 
-    <!-- Botones de navegación -->
     <button (click)="prevPicture()" class="carousel-btn prev-btn">❮</button>
     <button (click)="nextPicture()" class="carousel-btn next-btn">❯</button>
   </div>

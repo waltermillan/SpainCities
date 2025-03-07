@@ -14,17 +14,17 @@ namespace Tests.UnitTests
         [Fact]
         public async Task GetRegionById_ReturnsRegion_WhenRegionExists()
         {
-            // Arrange
+            //Arrange
             var mockRegionRepository = new Mock<IRegionRepository>();
             var region = new Region { Id = 7, Name = "Cataluña", Population = 7901963, Capital = "Barcelona", Surface = 32091 };
-            mockRegionRepository.Setup(repo => repo.GetByIdAsync(7)).ReturnsAsync(region); // Asegúrate de que el ID sea 7
+            mockRegionRepository.Setup(repo => repo.GetByIdAsync(7)).ReturnsAsync(region);
 
             var regionService = new RegionService(mockRegionRepository.Object);
 
-            // Act
-            var result = await regionService.GetRegionById(7); // Debe coincidir el ID
+            //Act
+            var result = await regionService.GetRegionById(7);
 
-            // Assert
+            //Assert
             Assert.NotNull(result);
             Assert.Equal(7, result.Id);
             Assert.Equal("Cataluña", result.Name);
@@ -36,7 +36,7 @@ namespace Tests.UnitTests
         [Fact]
         public async Task GetAllRegions_ReturnsRegions_WhenRegionsExist()
         {
-            // Arrange
+            //Arrange
             var mockRegionRepository = new Mock<IRegionRepository>();
             var regions = new List<Region>
             {
@@ -47,12 +47,12 @@ namespace Tests.UnitTests
 
             var regionService = new RegionService(mockRegionRepository.Object);
 
-            // Act
+            //Act
             var result = await regionService.GetAllRegions();
 
-            // Assert
+            //Assert
             Assert.NotNull(result);
-            Assert.Equal(2, result.Count()); // Usamos Count() para contar los elementos
+            Assert.Equal(2, result.Count());
             Assert.Contains(result, r => r.Name == "Cataluña");
             Assert.Contains(result, r => r.Name == "Madrid");
         }

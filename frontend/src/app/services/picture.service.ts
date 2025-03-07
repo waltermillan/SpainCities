@@ -11,7 +11,6 @@ export class PictureService {
 
   constructor(private http: HttpClient) { }
 
-  // Obtiene una Imagen (picture)
   getPicture(id: number): Observable<{ imageBase64: string }> {
   const url = `${this.apiUrl}${id}`;
  

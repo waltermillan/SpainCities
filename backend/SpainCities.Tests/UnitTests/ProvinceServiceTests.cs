@@ -3,7 +3,7 @@ using Core.Interfases;
 using Core.Services;
 using Moq;
 using System.Collections.Generic;
-using System.Linq; // Para usar Count()
+using System.Linq;
 using System.Threading.Tasks;
 using Xunit;
 
@@ -14,17 +14,17 @@ public class ProvinceServiceTests
     [Fact]
     public async Task GetProvinceById_ReturnsProvince_WhenProvinceExists()
     {
-        // Arrange
+        //Arrange
         var mockProvinceRepository = new Mock<IProvinceRepository>();
         var province = new Province { Id = 9, Name = "Barcelona", RegionId = 7 };
         mockProvinceRepository.Setup(repo => repo.GetByIdAsync(1)).ReturnsAsync(province);
 
         var provinceService = new ProvinceService(mockProvinceRepository.Object);
 
-        // Act
+        //Act
         var result = await provinceService.GetProvinceById(1);
 
-        // Assert
+        //Assert
         Assert.NotNull(result);
         Assert.Equal("Barcelona", result.Name);
         Assert.Equal(9, result.Id);
@@ -34,7 +34,7 @@ public class ProvinceServiceTests
     [Fact]
     public async Task GetAllProvinces_ReturnsProvinces_WhenProvincesExist()
     {
-        // Arrange
+        //Arrange
         var mockProvinceRepository = new Mock<IProvinceRepository>();
         var provinces = new List<Province>
         {
@@ -45,12 +45,12 @@ public class ProvinceServiceTests
 
         var provinceService = new ProvinceService(mockProvinceRepository.Object);
 
-        // Act
+        //Act
         var result = await provinceService.GetAllProvinces();
 
-        // Assert
+        //Assert
         Assert.NotNull(result);
-        Assert.Equal(2, result.Count()); // Usamos Count() para contar los elementos
+        Assert.Equal(2, result.Count());
         Assert.Contains(result, p => p.Name == "Barcelona");
         Assert.Contains(result, p => p.Name == "Madrid");
     }

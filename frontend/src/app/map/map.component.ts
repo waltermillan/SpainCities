@@ -13,23 +13,20 @@ export class MapComponent {
 
   getRamdonNumber()
   {
-    return Math.floor(Math.random() * 10000001); // Genera un número entre 0 y 10,000,000
+    return Math.floor(Math.random() * 10000001);
   }
 
   abrirVentana(nroRegion: number) {
-    // Pasar el parámetro NroRegion en la URL al componente Extra
+   
     const url = window.location.origin + '/extra?NroRegion=' + nroRegion + '&q=' + this.getRamdonNumber(); 
-    const nombreVentana = '_blank';  // Nombre de la ventana (abre en una nueva pestaña)
+    const nombreVentana = '_blank';
 
-    // Dimensiones de la nueva ventana
     const width = 1215;
     const height = 740;
     
-    // Calcular la posición centrada en la pantalla
     const left = (window.screen.width - width) / 2 - 10;
     const top = (window.screen.height - height) / 2 - 10;
 
-    // Especificaciones de la ventana
     const especificaciones = `width=${width},height=${height},left=${left},top=${top}`;
   
     window.open(url, nombreVentana, especificaciones);
@@ -59,12 +56,9 @@ export class MapComponent {
     { x: 846, y: 680, radio: 14 },//19
   ];
 
-  // Función que verifica si el punto (x, y) está dentro de un círculo dado su centro y radio
   isInsideCircle(x: number, y: number, centroX: number, centroY: number, radio: number): boolean {
 
     const distanciaCuadrada = Math.pow(x - centroX, 2) + Math.pow(y - centroY, 2);
-    
-
     return distanciaCuadrada <= Math.pow(radio, 2);
   }
 
@@ -80,7 +74,7 @@ export class MapComponent {
   }
 
   capturarCoordenadas(event: MouseEvent): void {
-    // Obtiene las coordenadas del clic
+
     this.x = event.clientX;
     this.y = event.clientY;
     console.log('x: ' + this.x + ', y: ' + this.y + ', radio: 14');
