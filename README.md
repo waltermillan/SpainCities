@@ -1,29 +1,29 @@
-# Proyecto SpainCities
-Visualizacion de regiones, provincias y ciudades de España.
+# SpainCities Project
+Visualization of regions, provinces and cities of Spain.
 
-## Objetivo:
+## Objective:
 
-Practicar .NET (C#) / SQL y Angular (Typescript) / Patrones de diseño / Arquitectura Onion.
-explicar, a grandes rasgos a gente ajena a la programación, que es BackEnd que es FrontEnd y que es BBDD.
-y a la vez armar un proyecto que sirve para explicar donde está cada region de España y que ciudades alberga.
+Practice .NET (C#) / SQL and Angular (Typescript) / Design Patterns / Onion Architecture.
+To explain, roughly to people outside of programming, what is BackEnd, what is FrontEnd and what is BBDD.
+and at the same time put together a project that serves to explain where each region of Spain is and what cities it houses.
 
-## Características
+## Features
 
 BACKEND:
-- Arquitectura Onion.
-- Diseño de patrones: Repository, UnitOfWork
+- Onion Architecture.
+- Pattern design: Repository, UnitOfWork
 
 FRONTEND:
-- Desarrollado con Angular 18.0.2
-- Orientado a módulos.
+- Developed with Angular 18.0.2.
+- Module-oriented.
 
-BBDD
-- Escrito en SQL Server
-- Tablas (DDLs) y Datos (DMLs)
+DB
+- Written in SQL Server
+- Tables (DDLs) and Data (DMLs)
 
-## Instalación
+## Installation
 
-1. Clona el repositorio:
+1. Clone the repository:
 
 git clone https://github.com/waltermillan/SpainCities.git
 YouTube: https://youtu.be/86pGkuyDWIQ
