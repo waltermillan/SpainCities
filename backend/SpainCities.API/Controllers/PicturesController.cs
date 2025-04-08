@@ -2,18 +2,33 @@
 using Core.Interfases;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using API.Services;
+using API.DTOs;
 
 namespace API.Controllers;
-[Route("api/pictures")]
-public class PictureController : BaseApiController
+public class PicturesController : BaseApiController
 {
     private readonly IUnitOfWork _unitOfWork;
     private readonly IMapper _mapper;
+    private readonly PictureDTOService _pictureDTOService;
 
-    public PictureController(IUnitOfWork unitOfWork, IMapper mapper)
+    public PicturesController(IUnitOfWork unitOfWork, IMapper mapper, PictureDTOService pictureDTOService)
     {
         _unitOfWork = unitOfWork;
         _mapper = mapper;
+        _pictureDTOService = pictureDTOService;
+    }
+
+    
+ [HttpGet("region/{regionId}")]
+ [ProducesResponseType(StatusCodes.Status200OK)]
+ [ProducesResponseType(StatusCodes.Status400BadRequest)]
+ [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public async Task<ActionResult<IEnumerable<PictureDTO>>> GetPicturesByRegion(int regionId)
+    {
+        var pictures = await _pictureDTOService.GetPicturesByRegionAsync(regionId);
+
+        return _mapper.Map<List<PictureDTO>>(pictures);
     }
 
     [HttpGet]

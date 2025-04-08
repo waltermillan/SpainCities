@@ -2,9 +2,6 @@
 using Core.Interfases;
 using Core.Services;
 using Moq;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using Xunit;
 
 namespace Tests.UnitTests;
 

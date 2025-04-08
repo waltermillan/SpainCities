@@ -1,14 +1,8 @@
 ﻿using Core.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Core.Interfases
+namespace Core.Interfases;
+
+public interface ICityRepository : IGenericRepository<City>
 {
-    public interface ICityRepository : IGenericRepository<City>
-    {
-        Task<IEnumerable<City>> GetCitiesByRegionIdAsync(int regionId);
-    }
+    Task<IEnumerable<City>> GetCitiesByRegionIdAsync(int regionId);
 }

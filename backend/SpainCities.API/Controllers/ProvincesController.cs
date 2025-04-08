@@ -5,14 +5,12 @@ using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 
 namespace API.Controllers;
-
-[Route("api/provinces")]
-public class ProvinceController : BaseApiController
+public class ProvincesController : BaseApiController
 {
     private readonly IUnitOfWork _unitOfWork;
     private readonly IMapper _mapper;
 
-    public ProvinceController(IUnitOfWork unitOfWork, IMapper mapper)
+    public ProvincesController(IUnitOfWork unitOfWork, IMapper mapper)
     {
         _unitOfWork = unitOfWork;
         _mapper = mapper;

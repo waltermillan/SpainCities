@@ -1,13 +1,10 @@
 ﻿using Core.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Core.Interfases
+namespace Core.Interfases;
+
+public interface IPictureRepository : IGenericRepository<Picture>
 {
-    public interface IPictureRepository : IGenericRepository<Picture>
-    {
-    }
+    Task<List<Picture>> GetAllAsync();
+    Task<List<Picture>> FindAsync(System.Linq.Expressions.Expression<Func<Picture, bool>> predicate);
+    Task<Picture> GetByIdAsync(int id);
 }

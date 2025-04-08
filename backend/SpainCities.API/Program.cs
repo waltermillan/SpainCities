@@ -1,6 +1,6 @@
 using API.Extensions;
 using Core.Interfases;
-using Core.Services;
+using API.Services;
 using Infrastructure.Data;
 using Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
@@ -18,6 +18,7 @@ builder.Services.AddScoped<IRegionRepository, RegionRepository>();
 builder.Services.AddScoped<ICityRepository, CityRepository>();
 builder.Services.AddScoped<IProvinceRepository, ProvinceRepository>();
 builder.Services.AddScoped<RegionDTOService>();
+builder.Services.AddScoped<PictureDTOService>();
 
 builder.Services.AddControllers();
 

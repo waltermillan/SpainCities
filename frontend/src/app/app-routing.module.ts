@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MapComponent } from './map/map.component';
-import { ExtraComponent } from './extra/extra.component';
+import { ShowExtraInfoComponent } from './show-extra-info/show-extra-info.component';
+import { ShowMapComponent } from './show-map/show-map.component';
 
 const routes: Routes = [
-  { path: 'map', component: MapComponent }, 
-  { path: '', redirectTo: '/map', pathMatch: 'full' },  
-  { path: 'extra', component: ExtraComponent },
+  { path: 'show-map', component: ShowMapComponent },
+  { path: '', redirectTo: '/show-map', pathMatch: 'full' }, 
+  { path: 'show-extra-info', component: ShowExtraInfoComponent },
 ];
 
 @NgModule({

@@ -4,14 +4,13 @@ using Core.Interfases;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers;
-[ApiController]
-[Route("api/cities")] // Usamos el plural en la ruta para seguir la convención RESTful
-public class CityController : BaseApiController
+
+public class CitiesController : BaseApiController
 {
     private readonly IUnitOfWork _unitOfWork;
     private readonly IMapper _mapper;
 
-    public CityController(IUnitOfWork unitOfWork, IMapper mapper)
+    public CitiesController(IUnitOfWork unitOfWork, IMapper mapper)
     {
         _unitOfWork = unitOfWork;
         _mapper = mapper;

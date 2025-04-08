@@ -1,0 +1,19 @@
+<table class="table">
+  <tr>
+    <td style="width: 50%;">
+
+      <!-- Map container with clickable image. When the map is clicked, it triggers the captureCoordinates method -->
+      <div class="map-container" (click)="captureCoordinates($event)">
+        <!-- The image of Spain map with regions. Usemap defines the clickable areas on the image. -->
+        <img src="assets/images/MapSpainByRegions.png" usemap="#mapaEspaña" alt="Map of Spain by regions"/>
+      </div>
+    </td>
+    <td style="width: 50%;">
+      <!-- Section where the information of the selected region will be displayed -->
+      <div *ngIf="selectedRegion">
+        <!-- Displays the extra information component, passing the selected region as input -->
+        <app-show-extra-info [region]="selectedRegion" *ngIf="selectedRegion"></app-show-extra-info>
+      </div>
+    </td>
+  </tr>
+</table>

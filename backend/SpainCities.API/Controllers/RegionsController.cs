@@ -2,22 +2,40 @@
 using Core.Interfases;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using API.Services;
+using API.Controllers;
 
-namespace API.Controllers;
-[Route("api/regions")]
-public class RegionController(IUnitOfWork unitOfWork, IMapper mapper) : BaseApiController
+public class RegionsController : BaseApiController
 {
-    private readonly IUnitOfWork _unitOfWork = unitOfWork;
-    private readonly IMapper _mapper = mapper;
+    private readonly IUnitOfWork _unitOfWork;
+    private readonly IMapper _mapper;
+    private readonly RegionDTOService _regionDTOService;
+
+    public RegionsController(IUnitOfWork unitOfWork, IMapper mapper, RegionDTOService regionDTOService)
+    {
+        _mapper = mapper;
+        _unitOfWork = unitOfWork;
+        _regionDTOService = regionDTOService;   
+    }
+
+    [HttpGet("cities/{cityId}")]
+    public async Task<IActionResult> GetRegionDTO(int cityId)
+    {
+        var customerDTO = await _regionDTOService.GetRegionDTOAsync(cityId);
+
+        if (customerDTO is null)
+            return NotFound();
+
+        return Ok(customerDTO);
+    }
+
 
     [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<ActionResult<IEnumerable<Region>>> Get()
     {
-        var region = await _unitOfWork.Regions
-                                    .GetAllAsync();
-
+        var region = await _unitOfWork.Regions.GetAllAsync();
         return _mapper.Map<List<Region>>(region);
     }
 

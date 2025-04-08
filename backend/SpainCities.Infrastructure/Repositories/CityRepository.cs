@@ -25,23 +25,4 @@ public class CityRepository(SpainCitiesContext context) : GenericRepository<City
                              .Where(c => c.RegionId == regionId)
                              .ToListAsync();
     }
-
-    public override async Task<(int totalRegistros, IEnumerable<City> registros)> GetAllAsync(
-                int pageIndex, int pageSize, string search)
-    {
-        var consulta = _context.Cities as IQueryable<City>;
-
-        if (!string.IsNullOrEmpty(search))
-        {
-            consulta = consulta.Where(p => p.Name.Contains(search, StringComparison.CurrentCultureIgnoreCase));
-        }
-
-        var totalRegistros = await consulta.CountAsync();
-        var registros = await consulta
-                            .Skip((pageIndex - 1) * pageSize)
-                            .Take(pageSize)
-                            .ToListAsync();
-
-        return (totalRegistros, registros);
-    }
 }

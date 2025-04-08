@@ -1,6 +1,4 @@
-﻿using Core.Interfases;
-
-namespace Core.Interfases;
+﻿namespace Core.Interfases;
 
 public interface IUnitOfWork
 {

@@ -1,0 +1,45 @@
+<div class="informacion-container">
+    <!-- Title and information section -->
+    <p style="font-size: 20px; font-weight: bold; background-color: #d3d3d3; width: 100%; text-align: center;">
+        Extra information from the community:
+    </p>
+  
+    <!-- Information on the selected region -->
+    <div class="informacion-texto">
+      <p><strong>Region:</strong> {{ region.name }}</p>
+      <p><strong>Population:</strong> {{ population | number:'1.0-0' }}</p>
+      <p><strong>Surface:</strong> {{ surface | number:'1.0-0' }} km²</p>
+    </div>
+  
+    <!-- Show capital city depending if it is Madrid -->
+    <div *ngIf="capital == 'Madrid'; else otherContent">
+      <p><strong>Capital:</strong>
+        <strong style="color: rgb(0, 52, 100);"> {{ capital }} (Republic's capital) </strong>
+      </p>
+    </div>
+  
+    <ng-template #otherContent>
+      <p><strong>Capital:</strong>
+        <strong style="color: darkgreen;"> {{ capital }} </strong>
+      </p>
+    </ng-template>
+  
+    <div class="informacion-texto">
+      <p><strong>Provinces:</strong> {{ provincesString }}</p>
+    </div>
+  
+    <div class="informacion-texto ciudades-texto">
+      <p><strong>Major cities:</strong> {{ cities }}</p>
+    </div>
+  
+    <!-- Carousel of images -->
+    <div *ngIf="pictures.length" class="carousel-container">
+      <div class="carousel-slide">
+        <img [src]="pictures[currentIndex]" alt="Icarousel image" class="carousel-image">
+      </div>
+  
+      <button (click)="prevPicture()" class="carousel-btn prev-btn">❮</button>
+      <button (click)="nextPicture()" class="carousel-btn next-btn">❯</button>
+    </div>
+  </div>
+  
