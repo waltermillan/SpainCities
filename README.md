@@ -37,7 +37,7 @@ At the same time, put together a project that serves to explain where each regio
 
 ### Prerequisites:
 Make sure you have the following installed:
-- **.NET SDK** (version X.X.X)
+- **.NET SDK** (version 9.0.200)
 - **SQL Server** or a compatible database.
 - **Node.js** and **npm** (for frontend development).
 
