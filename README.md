@@ -114,11 +114,12 @@ Ensure the following tools are installed:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/waltermillan/To-Do-List.git
+    git clone https://github.com/waltermillan/SpainCities.git
     ```
 
 2. Follow the setup video guide:
-    - [Version 1 - Display Version](https://youtu.be/478V9e3bG60)
+    - [Version 1 - Display Version](https://youtu.be/86pGkuyDWIQ)
+    - [Version 2 - Display Version](https://youtu.be/2HTYOler_Wo)
 
 3. Complete the remaining setup steps as outlined in the project documentation.
 
