@@ -9,6 +9,4 @@ public class Picture : BaseEntity
     public int RegionId { get; set; }
     [Column("image_base64")]
     public string ImageBase64 { get; set; }
-    [Column("name")]
-    public string Name { get; set; }
 }
