@@ -6,6 +6,8 @@ This application provides a complete and interactive visualization of the geogra
 
 ## 📅 Changelog
 
+- **01/08/2025**:
+  - **Backend**: The "Name" property is added to the base entity (BaseEntity) and the property is removed from the entities: Region, Country, Province and Picture.
 - **08/04/2025**:
   - **Architecture**: Added folder with an explanation of the solution's architecture. 
   - **Backend**: Code improvements and refactoring to follow clean code principles. 
